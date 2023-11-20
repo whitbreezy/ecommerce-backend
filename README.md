@@ -6,26 +6,26 @@ This project was intended to give bootcamp students practice with writing back e
 
 This project was created using starter code from the repo I linked in the [credits](#credits) section. I added code to set up the models being used, create the apis connecting the database and the application, and seeded in data to fill in the tables. This application uses an Express.js API and configures it to use the npm sequelize package to connect with a MySQL database. 
 
+By using this app, users can create, read, update, and delete data from the database. 
+
 See [usage](#usage) section for screenshots and a walkthrough video of the application in use.
 
 ## Installation
 
 To install this project, clone or fork from my github repo: https://github.com/whitbreezy/ecommerce-backend
 
-
 ## Usage
 
 In order to use this application, the user will first need to add their mysql credentials to the .env file. Next, the user will need to start up mysql from the command line and run SOURCE db/schema.sql to set up the database for use. After the database has been created, the user will need to quit mysql and then run the command "npm run seed" to seed the data into the database.
 
-Once the database has been sourced and seeded, the user will need to run "npm install" in the command line to install the needed packages. Finally, the user can start the application by running "npm start" in the command line.
+Once the database has been sourced and seeded, the user will need to run "npm install" in the command line to install the needed packages. Finally, the user can start the application by running "npm start" in the command line. I used Insomnia to test and use my endpoints.
 
-Link to walkthrough video of the application in use:
+Link to walkthrough video of the application in use: https://drive.google.com/file/d/10CXetC_QeFhRy3n2enK9D1E2V0ngrLaf/view
 
 Screenshots:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![alt text](assets/app_screenshot.png)
+
 
 ## Credits
 
