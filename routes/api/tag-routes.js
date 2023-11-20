@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
   try {
     const tagsData = await Tag.findAll({
       //include references to associated data in Products model
-      include: [{model: Product}]
+      include: [{model: Product, through: ProductTag, as:'tag_products'}]
     });
 
     res.status(200).json(tagsData);
@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
   try {
     const tagData = await Tag.findByPk(req.params.id, {
       // include products associated with the tag
-      include: [{model: Product}]
+      include: [{model: Product, through: ProductTag, as:'tag_products'}]
     });
     //if not found, throw an error message with a 404 status
     if (!tagData) {

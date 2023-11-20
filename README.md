@@ -15,7 +15,7 @@ To install this project, clone or fork from my github repo: https://github.com/w
 
 ## Usage
 
-In order to use this application, the user will first need to add their mysql credentials to the .env file. Next, the user will need to start up mysql from the command line and run SOURCE db/schema.sql to set up the database for use. After the database has been created, the user will need to quit mysql and then run the command "node seeds/index.js" to seed the data into the database.
+In order to use this application, the user will first need to add their mysql credentials to the .env file. Next, the user will need to start up mysql from the command line and run SOURCE db/schema.sql to set up the database for use. After the database has been created, the user will need to quit mysql and then run the command "npm run seed" to seed the data into the database.
 
 Once the database has been sourced and seeded, the user will need to run "npm install" in the command line to install the needed packages. Finally, the user can start the application by running "npm start" in the command line.
 
