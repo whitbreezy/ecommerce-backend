@@ -2,24 +2,26 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This project was intended to give bootcamp students practice with writing back end code for an ecommerce website, so that we can use the skills we learned in future projects or when we get a software engineering job. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This project was created using starter code from the repo I linked in the [credits](#credits) section. I added code to set up the models being used, create the apis connecting the database and the application, and seeded in data to fill in the tables. This application uses an Express.js API and configures it to use the npm sequelize package to connect with a MySQL database. 
 
-
+See [usage](#usage) section for screenshots and a walkthrough video of the application in use.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To install this project, clone or fork from my github repo: https://github.com/whitbreezy/ecommerce-backend
+
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+In order to use this application, the user will first need to add their mysql credentials to the .env file. Next, the user will need to start up mysql from the command line and run SOURCE db/schema.sql to set up the database for use. After the database has been created, the user will need to quit mysql and then run the command "node seeds/index.js" to seed the data into the database.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Once the database has been sourced and seeded, the user will need to run "npm install" in the command line to install the needed packages. Finally, the user can start the application by running "npm start" in the command line.
+
+Link to walkthrough video of the application in use:
+
+Screenshots:
 
     ```md
     ![alt text](assets/images/screenshot.png)
@@ -31,4 +33,4 @@ I used the starter code in this repo: https://github.com/coding-boot-camp/fantas
 
 ## License
 
-See repo for license info
+See repo for license info.
